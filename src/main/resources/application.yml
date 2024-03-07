@@ -1,0 +1,14 @@
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: postgres
+        url: jdbc:postgresql://craftbeerdb.cnsmgqwskc3n.us-east-1.rds.amazonaws.com:5432/craftbeer
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format_sql: true
+        show-sql: true
